@@ -24,7 +24,7 @@ const ResetPwd = () => {
             const token = window.location.pathname.split("/").pop()
 
             axios
-                .post(`http://localhost:3500/auth/resetPwd/${token}`, {newPassword})
+                .post(`https://taskmanagerx-api.onrender.com/auth/resetPwd/${token}`, {newPassword})
                 .then((response) => {
                     toast.success(response.data.message)
                     setTimeout(() => {

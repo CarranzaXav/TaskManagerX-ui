@@ -34,7 +34,6 @@ const EditUserForm = ({user}) => {
     const [password, setPassword] = useState('')
     const [validPassword, setValidPassword] = useState(false)
     const [email, setEmail] = useState(user?.email || "")
-    // const [validEmail, setValidEmail] = useState(false)
     const [roles,setRoles] = useState(user.roles)
     const [active,setActive] = useState(user.active)
 

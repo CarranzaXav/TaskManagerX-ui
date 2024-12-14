@@ -18,7 +18,6 @@ export const authApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, {dispatch, queryFulfilled}) {
                 try {
                     const {data} = await queryFulfilled
-                    console.log(data)
                     dispatch(logOut())
                     setTimeout(() =>{
                     dispatch(apiSlice.util.resetApiState())
@@ -37,8 +36,6 @@ export const authApiSlice = apiSlice.injectEndpoints({
             transformResponse: (response) => {
                 const { accessToken } = response;
                 if (accessToken) {
-                    console.log('Refresh response: ', accessToken);
-                    console.log('Full refresh response:', response);
                     return accessToken;
                 } else {
                 console.error('No accessToken found in refresh response.');
@@ -48,7 +45,6 @@ export const authApiSlice = apiSlice.injectEndpoints({
             async onQueryStarted(arg, {dispatch, queryFulfilled}) {
                 try{
                     const {data} = await queryFulfilled
-                    console.log('Refresh response: ',data)
                     const accessToken = data?.accessToken || data;
             if (accessToken) {
                 dispatch(setCredentials({ accessToken }));

@@ -60,9 +60,7 @@ const Welcome = () => {
                         </div>
                     </Link>
                 </div>
-            {/* } */}
-            
-            {/* {(isManager || isAdmin) &&  */}
+                
                 <div className='welcome__link'>
                     <Link to='/dash/users/new'>
                         <FontAwesomeIcon icon={faUserPlus} className='welcome__newUserIcon'/>

@@ -34,11 +34,11 @@ if(isSuccess){
 
     content = (
         
-        <div className="list list--users">   {/*table class=table table--users*/}
-            <div className="lhead list__lhead"> {/*thead class=table__thead*/}
-                <div className="list__row"> {/*tr */}
+        <div className="list list--users">
+            <div className="lhead list__lhead">
+                <div className="list__row">
 
-                    <div className="users__list__lh user__username">Username</div> {/*th table__th */}
+                    <div className="users__list__lh user__username">Username</div>
 
                     <div className="users__list__lh user__roles">Roles</div>
 
@@ -46,7 +46,7 @@ if(isSuccess){
 
                 </div>
             </div>
-            <div className="lbody"> {/*tbody */}
+            <div className="lbody">
                 {listContent}
             </div>
         </div>

@@ -12,7 +12,6 @@ const PersistLogin = () => {
     const [isVerified, setIsVerified] = useState(false); // State to track verification
 
     const [refresh, {
-        isUninitialized,
         isLoading,
         isSuccess,
         isError,
@@ -24,12 +23,10 @@ const PersistLogin = () => {
 
         const verifyRefreshToken = async () => {
             if (!token && persist) {
-                console.log('Verifying refresh token...');
                 try {
                     if(isMounted){
-                    await refresh().unwrap(); // Attempt to refresh the token
-                    setIsVerified(true); // Mark verification as complete
-                    console.log('Refresh token success');
+                    await refresh().unwrap();
+                    setIsVerified(true);
                     }
                 } catch (err) {
                     if (isMounted) {
@@ -41,8 +38,7 @@ const PersistLogin = () => {
                 setIsVerified(true); // If token exists, no need to verify
             }
         };
-        // console.log('Cookies:', document.cookie);
-        verifyRefreshToken(); // Call the function on mount
+        verifyRefreshToken(); 
 
         return () => {
             isMounted = false;
@@ -70,11 +66,9 @@ const PersistLogin = () => {
         );
     } else if (isVerified && (token || isSuccess)) {
         // Render child components if token exists or refresh succeeded
-        console.log('Token exists or refresh succeeded');
         content = <Outlet />;
     } else if (isVerified && !token) {
         // Redirect to login page if verification is complete but no token exists
-        console.log('Token verification complete but no token found');
         content = (
             <div className="errmsg">
                 <Link to="/login">Please log in</Link>

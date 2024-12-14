@@ -18,18 +18,15 @@
   --INACTIVE: lightgray;
   --LINK-COLOR: black;
   --LINK-HOVER: rgba(245, 245, 245, 0.9);
-  /* --DASH-HEADER: #352f44; */
   --DASH-HEADER: #5c5470;
   --TASK-BGCOLOR: #8594e4;
   --STATUS-COMPLETE: #7FFF00;
   --STATUS-OPEN: white;
   --TASK-OPEN: BLACK;
   --TASK-COMPLETED: #7FFF00;
-  /* --DIV-BGCOLOR: #8594e4; */
   --DIV-BGCOLOR: #5c5470;
   --DIV-COLOR: #430f58;
   --INPUT-INVALID: rgb(247, 44, 44);
-  /* --FORM-LINE: linear-gradient(0deg, rgba(250, 250, 251, 1) 76%, rgba(247, 246, 246, 0) 100%); */
 }
 
 /* Utility Class */
@@ -48,7 +45,6 @@
 .icon-button {
   width: 48px;
   height: 48px;
-  /* font-size: 3vw; */
   background-color: transparent;
   border: none;
   color: var(--LINK-COLOR);
@@ -123,7 +119,6 @@ a:focus-visible {
   display: flex;
   flex-direction: column;
   height: 80vh;
-  /* gap: 1rem; */
 }
 
 .welcome {
@@ -155,7 +150,6 @@ a:focus-visible {
   background: lightblue;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-content: center;
   gap: 20px;
   border-radius: 5px;
@@ -194,25 +188,12 @@ a:focus-visible {
   margin-top: 1em;
   align-content: center;
   justify-content: center;
-
-
-  /* a {
-    display: flex;
-    margin-right: 20px;
-    justify-items: center;
-    align-items: center;
-    font-size: 2rem;
-    }*/
-
 }
 
 .public__addr-buttons {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
-  /* height: 100px; */
   justify-content: center;
-  /* flex-direction: column; */
   align-items: center;
 }
 
@@ -282,23 +263,6 @@ a:focus-visible {
   width: 130px;
 }
 
-/* a:hover,
-a:focus-visible {
-  color: var(--LINK-HOVER); */
-
-/* cursor: pointer;
-  width: 140px;
-  height: 50px;
-  border-radius: 50%;
-  border: 2px solid var(--main-color);
-  background-color: var(--bg-color);
-  box-shadow: 4px 4px var(--main-color);
-  color: var(--font-color); */
-
-/* .welcome a::before {
-  content: "➜ ";
-} */
-
 .login {
   margin: auto;
   height: 40vh;
@@ -319,9 +283,7 @@ a:focus-visible {
   background: lightblue;
   display: flex;
   flex-direction: column;
-  /* align-items: flex-start; */
   justify-content: center;
-  /* gap: 20px; */
   border-radius: 5px;
   border: 2px solid var(--main-color);
   box-shadow: 4px 4px var(--main-color);
@@ -334,8 +296,6 @@ a:focus-visible {
   height: 70px;
   align-content: center;
   justify-content: center;
-  /* padding-bottom: 10px;
-  padding-top: 1em; */
   position: relative;
   top: 40px;
 }
@@ -378,7 +338,6 @@ a:focus-visible {
 .login__form__submit-button {
   padding: 0.3px;
   margin-top: 5px;
-  /* border-radius: 15px; */
   width: 160px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
@@ -399,7 +358,6 @@ a:focus-visible {
 
 .login__button-container {
   margin: 0px auto 0 auto;
-  /* margin-bottom: 15px; */
   width: 160px;
   border-radius: 5px;
   border: 2px solid var(--main-color);
@@ -539,10 +497,7 @@ a:focus-visible {
 
 .forgotPwd__form__button-Home {
   width: 40px;
-  /* position: absolute; */
-  /* left: 65vw; */
   font-size: 2.2rem;
-  /* top: 68vh; */
 }
 
 .emailSent {
@@ -771,12 +726,10 @@ a:focus-visible {
   top: 0;
   display: flex;
   padding-left: 25px;
-  /* padding-top: 15px; */
   z-index: 1;
   background-color: var(--DASH-HEADER);
   border-bottom: 1px solid var(--BORDER-COLOR);
   margin-right: 0;
-  /* text-decoration: none; */
 }
 
 .dash-header__title {
@@ -799,7 +752,6 @@ a:focus-visible {
   flex-flow: row nowrap;
   justify-content: flex-end;
   align-items: center;
-  /* padding-right: 5vw; */
 }
 
 .dash-header__icon {
@@ -816,10 +768,8 @@ a:focus-visible {
 .dash-header__iconButton {
   width: 36px;
   height: 36px;
-  /* margin-right: 15px; */
   font-size: 1.5rem;
   background-color: transparent;
-  /* border: none; */
   color: var(--LINK-COLOR);
   display: contents;
   place-content: center;
@@ -836,10 +786,8 @@ a:focus-visible {
 
 .dash-container {
   width: 90vw;
-  /* max-width: 1440px; */
   padding: 0.75em 0.5em 0.5em;
   margin-left: 5%;
-  /* margin-inline: auto; */
   flex-grow: 1;
 }
 
@@ -904,7 +852,6 @@ a:focus-visible {
 }
 
 .list__button {
-  /* font-size: 1.5em !important; */
   color: var(--DIV-COLOR);
 }
 
@@ -926,7 +873,6 @@ a:focus-visible {
   ;
   font-size: 1.6vw;
   padding-block: 2vh;
-  /* padding-left: 2vw; */
   place-content: center;
   display: flex;
 }
@@ -1033,14 +979,11 @@ a:focus-visible {
 
 .users__list__button {
   place-content: center;
-  /* font-size: 5vw; */
   color: var(--DIV-COLOR);
   width: 48px;
   height: 48px;
-  /* font-size: 2.5rem; */
   background-color: transparent;
   border: none;
-  /* color: var(--LINK-COLOR); */
   display: grid;
   place-content: center
 }
@@ -1110,7 +1053,6 @@ a:focus-visible {
 .form__edit {
   padding-top: 10vh;
   display: flex;
-  /* margin-left: calc(5px + 5vw); */
   flex-flow: column nowrap;
   gap: 1vh;
   width: 85vw;
@@ -1148,10 +1090,7 @@ a:focus-visible {
   height: 5vh;
   min-height: 50px;
   max-height: 65px;
-  /* left: 40vw; */
   left: 980px;
-  /* left: 65vw; */
-  /* background: rgb(255, 255, 255); */
   background:
     -webkit-linear-gradient(280deg, rgba(255, 255, 255, 1) 50%, rgba(247, 246, 246, 0) 90%);
   -webkit-background-clip: text;
@@ -1162,7 +1101,6 @@ a:focus-visible {
   background: rgb(255, 255, 255);
   background: linear-gradient(150deg, rgba(255, 255, 255, 1) 60%, rgba(247, 246, 246, 0) 95%);
   height: 2.5px;
-  /* border-top: 2px solid; */
   width: 90vw;
   max-width: 1340px;
   z-index: 0;
@@ -1525,9 +1463,6 @@ a:focus-visible {
     width: 55%;
   }
 
-  /* .public {
-  } */
-
   .public__title>h1 {
     font-size: 16px !important;
   }
@@ -1754,7 +1689,6 @@ a:focus-visible {
   }
 
   .public__main {
-    /* width:40vw; */
     font-size: 12px;
   }
 
@@ -1872,7 +1806,6 @@ a:focus-visible {
     max-width: 180px;
     font-size: 1rem;
     padding-left: 1vw;
-    /* margin-left: 10vw; */
     letter-spacing: 3px;
     border-radius: 50px;
   }
@@ -1914,7 +1847,6 @@ a:focus-visible {
   .task__status {
     background-color: var(--BUTTON-BORDER);
     border-right: none !important;
-    /* padding-left: 2vw; */
     padding-left: 0;
     padding-right: 2vw;
   }
@@ -1923,7 +1855,6 @@ a:focus-visible {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 4px outset; */
     border-radius: 50px;
 
   }
@@ -2164,7 +2095,6 @@ a:focus-visible {
   }
 
   .list__button {
-    /* font-size: 4vw !important; */
     align-self: center;
   }
 

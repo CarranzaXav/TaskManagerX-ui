@@ -22,20 +22,6 @@ const Task = ({ taskId }) => {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
     }
 
-
-    // const taskName = useMemo(() => (
-    //     <div
-    //         className={`
-    //             list__cell 
-    //             task__taskname
-    //             task__taskname--mobile
-
-    //             ${task.completed ? 'task__taskname--completed' : 'task__taskname--open'}`}
-    //     >
-    // { truncate(task.text, 60) }
-    //     </div >
-    // ), [task.completed, task.text]);
-
     const handleToggleCompleted = async () => {
         if (task) {
             try {
@@ -93,7 +79,7 @@ const Task = ({ taskId }) => {
                 <div className="list__cell task__created">{created}</div>
 
                 <div className='list__cell task__username'>
-                    {task.username} {/*May be user */}
+                    {task.username}
                 </div>
 
 
@@ -106,35 +92,6 @@ const Task = ({ taskId }) => {
                 </div>
 
                 <div className="list__cell task__updated">{updated}</div>
-                {/* {taskName} */}
-                {/* 
-                {task.completed 
-                    ? <div 
-                className='list__cell
-                 task__taskname task__taskname--completedtask__taskname--mobile'
-                 >
-                    {truncate(task.text, 50)}
-                </div>
-                    : <div 
-                className='list__cell task__taskname 
-                task__taskname--open
-                task__taskname--mobile'
-                >
-                    {truncate(task.text, 50)}
-                </div>
-                } */}
-                {/* <div 
-                className='list__cell task__taskname task__taskname--mobile'>
-                    {truncate(task.text, 50)}
-                </div> */}
-
-                {/* <div
-                    className={`list__cell task__taskname
-                    task__taskname--mobile ${task.completed ? 'task__taskname--completed' : 'task__taskname--open'}`}
-                >
-                {truncate(task.text, 50)}                
-                </div> */}
-
 
                 <div className='list__cell icon-button--mobile'>
                     <button
@@ -152,9 +109,5 @@ const Task = ({ taskId }) => {
 }
 
 const memoizedTask = memo(Task)
-
-// const memoizedTask = memo( Task, (prevProps, nextProps) => {
-//     return prevProps.taskId === nextProps.taskId;
-// })
 
 export default memoizedTask

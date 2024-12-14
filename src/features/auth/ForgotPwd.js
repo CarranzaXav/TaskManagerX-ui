@@ -26,7 +26,7 @@ const ForgotPwd = () => {
                 setIsLoading(true)
                 try {
                     const response = await axios.post(
-                "http://localhost:3500/auth/forgotPwd", values
+                "https://taskmanagerx-api.onrender.com/auth/forgotPwd", values
                     )
                     resetForm()
                     toast.success("Email sent successfully")

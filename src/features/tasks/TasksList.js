@@ -43,16 +43,11 @@ if(isSuccess){
     } else {
         filteredIds = ids.filter(taskId => entities[taskId].username === username)
     }
-
-    // console.log("Filtered by User or ALL", filteredIds)
-
     if(selectedArea !== 'All') {
         filteredIds = filteredIds.filter(taskId => {
             const taskArea = entities[taskId].areas || []
             return taskArea.includes(selectedArea)})
     }
-
-    // console.log("Filtered by Area", filteredIds)
 
     const listContent = ids?.length
     ? filteredIds.map(taskId => <Task key={taskId} taskId={taskId} />) : null
@@ -80,14 +75,12 @@ if(isSuccess){
             </div>
         }
 
-        <div className="list list--tasks"> {/*table table--notes */}
+        <div className="list list--tasks">
        
-            <div className="lhead list__lhead"> {/*thead className="table__head" */}
-                <div className="list__row"> {/*tr */}
+            <div className="lhead list__lhead"> 
+                <div className="list__row">
                 <div className="list__lh task__status">Status</div>
-
-                  {/* Beginning of <th className="table__th"> */}
-                  
+                
                   <div className="list__lh task__created">Created</div>
 
                   <div className="list__lh task__username">User</div>
@@ -100,8 +93,6 @@ if(isSuccess){
                   <div className="list__lh task__updated"> Updated </div>
 
                   <div className="list__lh task__edit task__edit--mobile">Edit</div>
-
-                  {/* end of th className="table__th" */}
                 </div>
 
             </div>

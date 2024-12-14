@@ -40,7 +40,6 @@ const EditTaskForm = ({ task, users }) => {
         }
     }, [isSuccess, isDelSuccess, navigate])
 
-    // const onAreasChanged = e => setAreas(e.target.value)
     const onTextChanged = e => setText(e.target.value)
     const onCompletedChanged = e => setCompleted(prev => !prev)
     const onUserIdChanged = e => setUserId(e.target.value)
@@ -113,7 +112,6 @@ const EditTaskForm = ({ task, users }) => {
               {(isAdmin) &&  
               <div className="form__field__select">
                 <label htmlFor="task-areas" className="form__label-edit">Area: </label> 
-                {/*htmlFor='task-title' */}
                     <select name="areas" id="areas" className={`form__select form__select__editTask ${validAreasClass}`}
                     multiple={true}
                     size='3'

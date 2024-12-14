@@ -22,7 +22,6 @@ const useAuth = () => {
           if(isManager) status = 'Manager'
           if(isAdmin) status = 'Admin'
 
-          // console.log('useAuth - Decoded Roles: ', roles)
           return {username, roles, status, isManager, isAdmin}
         }
       }
