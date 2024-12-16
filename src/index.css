@@ -826,9 +826,6 @@ a:focus-visible {
   row-gap: 0.1em;
 }
 
-.list__container{
-  margin-left: -5%;
-}
 
 .list__filter {
   width: 70vw;
