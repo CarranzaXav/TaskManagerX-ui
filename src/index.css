@@ -111,6 +111,12 @@ a:focus-visible {
   background-color: var();
 }
 
+PulserLoader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Pages */
 
 .public,
