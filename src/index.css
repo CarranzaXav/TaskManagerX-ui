@@ -1363,16 +1363,34 @@ a:focus-visible {
   }
 
   .dash-header__nav {
-    gap: 0;
+    gap: 5px;
   }
 
   .dash-header {
     padding-left: 4vw;
   }
 
+  .dash-header__titleContainer{
+    width:80%;
+  }
+
   .dash-header__title {
     letter-spacing: 3px;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    width:90%;
+    padding-left: 5px;
+  }
+
+  .dash-header__container {
+    width: 10%;
+  }
+
+  .dash-header__icon {
+    padding-left:10px;
+  }
+
+  .dash-header__iconButton {
+    font-size: 1rem;
   }
 
   .dash-container {
@@ -1392,6 +1410,7 @@ a:focus-visible {
   .welcome {
     min-width: 160px;
     height: 480px;
+    margin-top: 10px;
   }
 
   .welcome>h1 {

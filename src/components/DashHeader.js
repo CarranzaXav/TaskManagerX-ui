@@ -134,7 +134,7 @@ const DashHeader = () => {
     <p className={errClass}>{error?.data?.message}</p>
 
     <header className="dash-header">
-          <Link to="/dash">
+          <Link className="dash-header__titleContainer" to="/dash">
             <h1 className="dash-header__title">Task Manager X</h1>
           </Link>
 
