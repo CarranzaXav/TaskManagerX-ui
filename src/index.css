@@ -735,7 +735,6 @@ a:focus-visible {
   top: 0;
   display: flex;
   padding-left: 25px;
-  z-index: 1;
   background-color: var(--DASH-HEADER);
   border-bottom: 1px solid var(--BORDER-COLOR);
   margin-right: 0;
