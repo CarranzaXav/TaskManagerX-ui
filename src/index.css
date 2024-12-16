@@ -1460,6 +1460,11 @@ a:focus-visible {
 
   .login__button-container {
     position: relative;
+    font-size: 20px;
+  }
+
+  .login__header__title{
+    top: 25px;
   }
 
   .emailSent__form__link {
