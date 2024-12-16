@@ -111,12 +111,6 @@ a:focus-visible {
   background-color: var();
 }
 
-PulserLoader{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Pages */
 
 .public,
@@ -1374,7 +1368,7 @@ PulserLoader{
 
   .dash-header {
     padding-left: 4vw;
-     margin-bottom: 10px;
+    margin-bottom: 30px;
   }
 
   .dash-header__titleContainer{
