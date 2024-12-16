@@ -15,11 +15,11 @@ export const usersApiSlice = apiSlice.injectEndpoints({
                 },
             }),
             transformResponse: responseData => {
-            const loadedUsers = responseData.map(user => {
-                user.id = user._id
-                return user
-            });
-            return usersAdapter.setAll(initialState, loadedUsers)
+                const loadedUsers = responseData.map(user => {
+                    user.id = user._id
+                    return user
+                });
+                return usersAdapter.setAll(initialState, loadedUsers)
             },
             providesTags:(result,error,arg) => {
                 if(result?.ids){
