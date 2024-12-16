@@ -5,7 +5,6 @@ import useAuth from '../../hooks/useAuth'
 import PulseLoader from "react-spinners/PulseLoader"
 import useTitle from "../../hooks/useTitle"
 import { AREAS } from "../../config/areas"
-import PulseLoader from "react-spinners/PulseLoader"
 
 const TasksList = () => {
     useTitle('Task Manager X: Task List')
