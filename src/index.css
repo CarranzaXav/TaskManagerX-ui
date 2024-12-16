@@ -1363,7 +1363,7 @@ a:focus-visible {
   }
 
   .dash-header__nav {
-    gap: 5px;
+    gap: 8px;
   }
 
   .dash-header {
@@ -1382,11 +1382,11 @@ a:focus-visible {
   }
 
   .dash-header__container {
-    width: 10%;
+    width: 15%;
   }
 
   .dash-header__icon {
-    padding-left:10px;
+    padding-left:12px;
   }
 
   .dash-header__iconButton {
