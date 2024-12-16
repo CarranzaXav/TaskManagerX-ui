@@ -1374,6 +1374,7 @@ PulserLoader{
 
   .dash-header {
     padding-left: 4vw;
+     margin-bottom: 10px;
   }
 
   .dash-header__titleContainer{
@@ -1416,7 +1417,6 @@ PulserLoader{
   .welcome {
     min-width: 160px;
     height: 480px;
-    margin-top: 10px;
   }
 
   .welcome>h1 {
