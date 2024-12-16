@@ -5,6 +5,7 @@ import useAuth from '../../hooks/useAuth'
 import PulseLoader from "react-spinners/PulseLoader"
 import useTitle from "../../hooks/useTitle"
 import { AREAS } from "../../config/areas"
+import PulseLoader from "react-spinners/PulseLoader"
 
 const TasksList = () => {
     useTitle('Task Manager X: Task List')
@@ -28,7 +29,7 @@ const handleAreaChange = (e) => setSelectedArea(e.target.value)
 
 let content 
 
-if(isLoading) content = <PulseLoader color={'#FFF'}/>
+if(isLoading) content = <PulseLoader className="loader" color={'#FFF'}/>
 
 if(isError){
     content = <p className="errmsg">{error?.data?.message}</p>

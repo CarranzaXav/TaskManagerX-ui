@@ -20,7 +20,7 @@ const {
 
 let content 
 
-if(isLoading) content = <PulseLoader color={"#FFF"}/>
+if(isLoading) content = <PulseLoader className="loader" color={'#FFF'}/>
 
 if(isError){
     content = <p className="errmsg">{error?.data?.message}</p>

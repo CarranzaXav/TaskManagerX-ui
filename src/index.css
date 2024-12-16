@@ -111,6 +111,15 @@ a:focus-visible {
   background-color: var();
 }
 
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  font-size: 2rem;
+}
+
 /* Pages */
 
 .public,
@@ -1411,6 +1420,7 @@ a:focus-visible {
   .welcome {
     min-width: 160px;
     height: 480px;
+    margin: auto;
   }
 
   .welcome>h1 {

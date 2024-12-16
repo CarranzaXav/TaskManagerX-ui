@@ -9,7 +9,7 @@ import {
   faFileCirclePlus,
   faBars
  } from "@fortawesome/free-solid-svg-icons"
-
+import PulseLoader from "react-spinners/PulseLoader"
 import { useSendLogoutMutation } from "../features/auth/authApiSlice"
 
 import useAuth from '../hooks/useAuth'
@@ -112,7 +112,10 @@ const DashHeader = () => {
   const toggle = toggleMenuOpen ? 'inline-flex' : 'none'
 
   let buttonContent
-    if(isLoading) {buttonContent = <p>Logging Out...</p>}
+    if(isLoading) {buttonContent = <p>
+    Logging Out 
+    <PulseLoader color={'#FFF'}/>
+    </p>}
     else {
       buttonContent = (
         <>

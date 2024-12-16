@@ -54,7 +54,10 @@ const PersistLogin = () => {
     } else if (isLoading) {
         // Show loader during token verification
         console.log('Loading...');
-        content = <PulseLoader color={'#FFF'} />;
+        content = <p>
+        Loading 
+        <PulseLoader color={'#FFF'}/>;
+        </p>
     } else if (isError) {
         // Show error message if refresh token fails
         console.log('Error during token refresh:', error?.data?.message);

@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { 
   faHome
  } from "@fortawesome/free-solid-svg-icons"
+ import PulseLoader from "react-spinners/PulseLoader"
 
 const ForgotPwd = () => {
 
@@ -46,6 +47,8 @@ const ForgotPwd = () => {
                 }
         }
     })
+
+    if(isLoading) return <PulseLoader className="loader" color={'#FFF'}/>
 
   return (
     <>
