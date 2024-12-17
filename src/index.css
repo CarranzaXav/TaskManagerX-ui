@@ -1404,6 +1404,7 @@ a:focus-visible {
   }
 
   .dash-container {
+    overflow-y: scroll;
     min-width: 30vw;
   }
 
