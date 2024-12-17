@@ -1379,7 +1379,7 @@ a:focus-visible {
 
   .dash-header {
     padding-left: 4vw;
-    margin-bottom: 10%;
+    /* margin-bottom: 10%; */
   }
 
   .dash-header__titleContainer{
@@ -1407,8 +1407,9 @@ a:focus-visible {
 
   .dash-container {
     overflow-y: scroll;
-    margin-top:5%;
+    /* margin-top:5%; */
     min-width: 30vw;
+    height: 100vh;
     margin-bottom: 0;
   }
 
