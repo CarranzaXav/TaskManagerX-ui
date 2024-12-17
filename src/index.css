@@ -664,6 +664,7 @@ a:focus-visible {
 }
 
 .welcome__links {
+  color: #FFF;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -735,6 +736,7 @@ a:focus-visible {
   top: 0;
   display: flex;
   padding-left: 25px;
+  color: #FFF;
   background-color: var(--DASH-HEADER);
   border-bottom: 1px solid var(--BORDER-COLOR);
   margin-right: 0;
@@ -1422,7 +1424,7 @@ a:focus-visible {
 
   .welcome {
     min-width: 160px;
-    height: 480px;
+    height: 430px;
     margin: auto;
   }
 
@@ -1444,9 +1446,9 @@ a:focus-visible {
   }
 
   .welcome__link {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-left: 5vw;
-    height: 95px;
+    height: 85px;
     min-width: 90px;
   }
 
