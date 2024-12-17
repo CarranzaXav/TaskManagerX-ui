@@ -1404,6 +1404,7 @@ a:focus-visible {
 
   .dash-container {
     min-width: 30vw;
+    max-height: 530px;
   }
 
   .icon-button {
@@ -1418,7 +1419,7 @@ a:focus-visible {
 
   .welcome {
     min-width: 160px;
-    height: 480px;
+    height: 100%;
     margin: auto;
   }
 
