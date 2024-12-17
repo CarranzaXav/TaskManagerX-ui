@@ -1377,7 +1377,7 @@ a:focus-visible {
 
   .dash-header {
     padding-left: 4vw;
-    margin-bottom: 30px;
+    margin-bottom: 10%;
   }
 
   .dash-header__titleContainer{
@@ -1407,6 +1407,7 @@ a:focus-visible {
     overflow-y: scroll;
     margin-top:5%;
     min-width: 30vw;
+    margin-bottom: 0;
   }
 
   .icon-button {
