@@ -1405,7 +1405,7 @@ a:focus-visible {
 
   .dash-container {
     overflow-y: scroll;
-    padding-top:5%;
+    margin-top:5%;
     min-width: 30vw;
   }
 
