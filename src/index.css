@@ -76,7 +76,7 @@
 /* General Styles */
 
 body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   background-color: var(--BGCOLOR);
   font-size: 100%;
   color: var(--COLOR);
@@ -90,7 +90,7 @@ select {
 }
 
 #root {
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -1369,6 +1369,14 @@ a:focus-visible {
 }
 
 @media screen and (max-width:436px) {
+  body {
+    min-height:75vh;
+  }
+
+  #root{
+    height: 75vh;
+  }
+
   h1 {
     font-size: 2rem;
   }
