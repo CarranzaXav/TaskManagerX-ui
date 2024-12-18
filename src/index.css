@@ -123,7 +123,6 @@ a:focus-visible {
 /* Pages */
 
 .public,
-.welcome,
 .login {
   display: flex;
   flex-direction: column;
@@ -131,13 +130,15 @@ a:focus-visible {
 }
 
 .welcome {
+  display: flex;
+  flex-direction: column;
   background-color: var(--DIV-BGCOLOR);
   border-radius: 25px;
   padding: 2%;
   max-width: 80vw;
   min-width: 200px;
   margin-left: 5vw;
-  margin-top: 30px;
+  margin-top: 10px;
   max-height: 700px;
   /*Fix this for mobile*/
 }
@@ -800,10 +801,12 @@ a:focus-visible {
   padding: 0.75em 0.5em 0.5em;
   margin-left: 5%;
   flex-grow: 1;
+  position: static;
 }
 
 .dash-footer {
   width: 100%;
+  height:40px;
   font-size: 1.2rem;
   position: sticky;
   bottom: 0;
@@ -815,6 +818,7 @@ a:focus-visible {
   flex-flow: row nowrap;
   justify-content: center;
   gap: 1em;
+  
 }
 
 .dash-footer__button {
@@ -1370,11 +1374,11 @@ a:focus-visible {
 
 @media screen and (max-width:436px) {
   body {
-    min-height:75vh;
+    min-height:85vh;
   }
 
   #root{
-    height: 75vh;
+    height: 85vh;
   }
 
   h1 {
@@ -2065,7 +2069,7 @@ a:focus-visible {
   .welcome {
     margin-left: 7.5vw;
     width: 85%;
-    max-height: 620px;
+    max-height: 400px;
     padding-bottom: 0;
   }
 
@@ -2073,7 +2077,7 @@ a:focus-visible {
     font-size: 3rem;
     margin-top: -5px;
     padding-left: 5px;
-    letter-spacing: 7px;
+    letter-spacing: 15px;
   }
 
   .forgotPwd__form__label {
@@ -2107,9 +2111,11 @@ a:focus-visible {
   .welcome__addTaskIcon,
   .welcome__taskListIcon,
   .welcome__userListIcon {
-    height: 50px;
-    margin-top: -10px;
+   display: flex;
+    height: 35px;
     margin-left: -10%;
+    margin-top: -10px;
+    align-items: center;
   }
 
   .welcome__links {
@@ -2121,9 +2127,9 @@ a:focus-visible {
   }
 
   .welcome__links--title {
-    margin-top: -5px;
+    margin-top: 15px;
     margin-left: -5%;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     letter-spacing: 4px;
 
   }
