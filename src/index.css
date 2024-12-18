@@ -649,6 +649,7 @@ a:focus-visible {
 
 .welcome>h1 {
   padding-block: 1vh;
+  letter-spacing: 5px;
   font-size: 3rem;
   color: #FFFFFF;
 }
