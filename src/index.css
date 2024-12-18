@@ -800,7 +800,7 @@ a:focus-visible {
   width: 90vw;
   padding: 0.75em 0.5em 0.5em;
   margin-left: 5%;
-  flex-grow: 1;
+  flex-grow: 2;
   position: static;
 }
 
@@ -2112,7 +2112,7 @@ a:focus-visible {
   .welcome__taskListIcon,
   .welcome__userListIcon {
    display: flex;
-    height: 35px;
+    height: 30px;
     margin-left: -10%;
     margin-top: -10px;
     align-items: center;
@@ -2120,9 +2120,11 @@ a:focus-visible {
 
   .welcome__links {
     margin-top: -10%;
+    /* height: 70px; */
   }
 
   .welcome__link {
+    max-height: 70px;
     max-width: 500px;
   }
 
