@@ -696,10 +696,10 @@ a:focus-visible {
 }
 
 
-.welcome__addTaskIcon,
-.welcome__taskListIcon,
-.welcome__userListIcon,
-.welcome__newUserIcon {
+  .welcome__newUserIcon,
+  .welcome__addTaskIcon,
+  .welcome__taskListIcon,
+  .welcome__userListIcon {
   margin-right: 15px;
   height: 50px;
   width: 50px;
