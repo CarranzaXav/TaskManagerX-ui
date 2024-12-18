@@ -698,7 +698,7 @@ a:focus-visible {
 
 .welcome__addTaskIcon,
 .welcome__taskListIcon,
-.welcome__userListIcon
+.welcome__userListIcon,
 .welcome__newUserIcon {
   margin-right: 15px;
   height: 50px;
