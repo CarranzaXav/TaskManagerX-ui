@@ -1411,9 +1411,8 @@ a:focus-visible {
   }
 
   .dash-container {
-    overflow-y: scroll;
     min-width: 30vw;
-    margin-bottom: 110px;
+    margin-bottom: 130px;
   }
 
   .icon-button {
