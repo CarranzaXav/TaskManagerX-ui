@@ -129,20 +129,6 @@ a:focus-visible {
   height: 80vh;
 }
 
-.welcome {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--DIV-BGCOLOR);
-  border-radius: 25px;
-  padding: 2%;
-  max-width: 80vw;
-  min-width: 200px;
-  margin-left: 5vw;
-  margin-top: 10px;
-  max-height: 700px;
-  /*Fix this for mobile*/
-}
-
 .public {
   margin: auto;
   height: 50vh;
@@ -647,6 +633,20 @@ a:focus-visible {
   margin-top: 20px;
 }
 
+.welcome {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--DIV-BGCOLOR);
+  border-radius: 25px;
+  padding: 2%;
+  max-width: 80vw;
+  min-width: 200px;
+  margin-left: 5vw;
+  margin-top: 10px;
+  max-height: 550px;
+  /*Fix this for mobile*/
+}
+
 .welcome>h1 {
   padding-block: 1vh;
   font-size: 3rem;
@@ -671,19 +671,19 @@ a:focus-visible {
   flex-direction: column;
   align-items: flex-start;
   top: -5vh;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
 .welcome__link {
   margin-block: 1vh;
-  padding-block: 35px;
+  padding-block: 15px;
   padding-left: 55px;
   width: 52vw;
   max-width: 600px;
   min-width: 280px;
   height: 15vh;
-  max-height: 135px;
+  max-height: 95px;
   background-color: var(--BORDER-COLOR);
   border-radius: 25px;
 }
@@ -695,32 +695,24 @@ a:focus-visible {
   bottom: 45px;
 }
 
-.welcome__addTaskIcon {
+
+.welcome__addTaskIcon,
+.welcome__taskListIcon,
+.welcome__userListIcon
+.welcome__newUserIcon {
   margin-right: 15px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
+  color: #FFFFFF;
 }
 
 .welcome__taskListIcon {
   border-radius: 9px;
-  margin-right: 15px;
-  height: 60px;
-  width: 60px;
-}
-
-.welcome__userListIcon {
-  margin-right: 15px;
-  color: #FFFFFF;
-  height: 60px;
-  width: 60px;
+ 
 }
 
 .welcome__newUserIcon {
   padding-inline: 5px;
-  color: #FFFFFF;
-  height: 60px;
-  width: 60px;
-  margin-right: 15px;
 }
 
 .welcome__date--date,
