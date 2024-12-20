@@ -1459,7 +1459,7 @@ a:focus-visible {
     margin-left: 15px;
     font-size: .85rem;
     letter-spacing: 2.5px;
-    margin-top: 18px;
+    margin-top: 5px;
   }
 
   .welcome__taskListIcon,
@@ -1473,7 +1473,7 @@ a:focus-visible {
   .welcome__userListIcon {
     height: 30px;
     margin-left: -15px;
-
+    margin-block: 15px;
   }
 
   .login__button-container {
@@ -1696,7 +1696,7 @@ a:focus-visible {
   }
 }
 
-@media screen and (min-width:437px) and (max-width:770px) {
+@media screen and (min-width:437px) and (max-width:750px) {
   .welcome {
     width: 80vw;
     height: 77vh;
@@ -1824,6 +1824,10 @@ a:focus-visible {
   .task__username,
   .task__updated {
     display: none;
+  }
+
+  .list__container{
+    margin-left: -5%;
   }
 
   .list--tasks {
@@ -2000,7 +2004,17 @@ a:focus-visible {
 
 }
 
-@media screen and (min-width:770px) and (max-width: 1450px) {
+@media screen and (min-width:750px) and (max-width: 1024px) {
+  .list__container {
+    margin-left: -5%;
+    }
+
+  .icon--button-img-mobile {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1450px) {
   body {
     font-size: 1.25rem;
   }
