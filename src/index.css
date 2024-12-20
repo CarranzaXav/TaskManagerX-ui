@@ -2005,8 +2005,8 @@ a:focus-visible {
 }
 
 @media screen and (min-width:750px) and (max-width: 1024px) {
-  .list__container {
-    margin-left: -5%;
+  .dash-container {
+    margin-inline: auto;
     }
 
   .icon--button-img-mobile {
