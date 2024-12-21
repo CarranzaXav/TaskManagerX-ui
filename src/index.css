@@ -928,6 +928,10 @@ a:focus-visible {
   background-color: var(--INACTIVE);
 }
 
+.icon-button-img-mobile {
+  font-size: 1.8rem;
+}
+
 /* USER */
 
 .list--users {
