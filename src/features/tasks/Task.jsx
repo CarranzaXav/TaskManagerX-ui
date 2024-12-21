@@ -99,7 +99,7 @@ const Task = ({ taskId }) => {
                         onClick={handleEdit}
                     >
                         <FontAwesomeIcon
-                            style={{ fontSize: 2 + "em" }}
+                            // style={{ fontSize: 2 + "em" }}
                             className="icon--button-img-mobile" icon={faPenToSquare} />
                     </button>
                 </div>
