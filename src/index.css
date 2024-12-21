@@ -792,7 +792,7 @@ a:focus-visible {
 .dash-container {
   width: 90vw;
   padding: 0.75em 0.5em 0.5em;
-  margin-left: 5%;
+  margin-left: auto;
   flex-grow: 2;
   position: static;
 }
@@ -2046,7 +2046,6 @@ a:focus-visible {
   }
 
   .list--tasks {
-    margin-left: 5vw;
     grid-template-columns: 10vw 10vw 10vw 15vw 25vw 10vw 8vw;
     row-gap: 0.25em;
   }
