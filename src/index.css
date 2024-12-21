@@ -2016,6 +2016,13 @@ a:focus-visible {
   .icon--button-img-mobile {
     font-size: 1.5em;
   }
+  .welcome__date{
+    font-size: 1.5rem;
+    top: -15px;
+  }
+  .login__header__title{
+    top: 25px;
+  }
 }
 
 @media screen and (min-width:1025px) and (max-width: 1450px) {
