@@ -10,6 +10,7 @@ import {
   faHome
  } from "@fortawesome/free-solid-svg-icons"
  import PulseLoader from "react-spinners/PulseLoader"
+ import "./authCSS/ForgotPwd.css"
 
 const ForgotPwd = () => {
 

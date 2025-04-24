@@ -1,0 +1,114 @@
+.errmsg {
+  display: inline-block;
+  background-color: var(--DIV-BGCOLOR);
+  color: var(--ERROR);
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.dash-header {
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  padding-left: 25px;
+  color: #fff;
+  background-color: var(--DASH-HEADER);
+  border-bottom: 1px solid var(--BORDER-COLOR);
+  margin-right: 0;
+  z-index: 2;
+}
+
+.dash-header__titleContainer{
+  width: 50%;
+}
+
+.dash-header__title {
+  width: 100%;
+  min-width: 40px;
+  min-height: 70px;
+  height: 6vh;
+  max-height: 80px;
+  display: grid;
+  position: relative;
+  align-content: center;
+  justify-content: start;
+  font-size: 1.75rem;
+  padding-left: 5%;
+}
+
+.dash-header__container {
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5%;
+}
+
+.dash-header__icon {
+  background-color: var(--DASH-HEADER);
+  color: var(--LINK-COLOR);
+  padding-left: 20px;
+  font-size: 2rem;
+  place-self: center;
+  display: flex;
+  position: relative;
+  border: none;
+}
+
+.dash-header__iconButton {
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: var(--LINK-COLOR);
+  display: contents;
+  place-content: center;
+}
+
+.dash-header__nav {
+  width: 5%;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  gap: 0.8em;
+
+  svg{
+    cursor: pointer;
+  }
+}
+
+.dash-header__iconButton.hovered:hover {
+    color: white;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+.none {
+  display: none;
+}
+
+@media screen and (max-width: 436px) {
+  .dash-header__nav {
+    gap: 8px;
+  }
+
+  .dash-header {
+    margin-bottom: 20px;
+  }
+
+  .dash-header__title {
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+}
+
+  .dash-header__icon{
+    font-size: 1.25rem;
+  }
+
+  .dash-header__iconButton {
+    font-size: 1rem;
+  }
+}

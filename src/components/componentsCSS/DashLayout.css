@@ -1,0 +1,7 @@
+.dash-container {
+  width: 100vw;
+  padding-block: 0.5em 2em;
+  margin-inline: auto;
+  flex-grow: 2;
+  position: static;
+}

@@ -5,6 +5,7 @@ import Completed from '../../icons/Complete.svg'
 import { useNavigate } from "react-router-dom"
 import { useGetTasksQuery, useUpdateTaskMutation } from "./tasksApiSlice"
 import { memo } from 'react'
+import "./tasksCSS/Task.css"
 
 const Task = ({ taskId }) => {
 
@@ -54,8 +55,8 @@ const Task = ({ taskId }) => {
         const handleEdit = () => navigate(`/dash/tasks/${taskId}`)
 
         return (
-            <div className="list__row ">
-                <div className='list__cell task__status--info' onClick={handleToggleCompleted}>
+            <div className="task__row ">
+                <div className='task__cell task__status--info' onClick={handleToggleCompleted}>
                     {task.completed
                         ? <div className="task__status--container">
                             <div className="task__status--completed">
@@ -76,30 +77,30 @@ const Task = ({ taskId }) => {
                     }
                 </div>
 
-                <div className="list__cell task__created">{created}</div>
+                <div className="task__cell task__created">{created}</div>
 
-                <div className='list__cell task__username'>
+                <div className='task__cell task__username'>
                     {task.username}
                 </div>
 
 
-                <div className='list__cell task__areas__info task__areas__info--tablet'>
+                <div className='task__cell task__areas__info task__areas__info--tablet'>
                     {task.areas}
                 </div>
 
-                <div className={`list__cell task__taskname ${taskClassName}`}>
+                <div className={`task__cell task__taskname ${taskClassName}`}>
                     {truncate(task.text, 40)}
                 </div>
 
-                <div className="list__cell task__updated">{updated}</div>
+                <div className="task__cell task__updated">{updated}</div>
 
-                <div className='list__cell icon-button--mobile'>
+                <div className='task__cell icon-button--mobile'>
                     <button
-                        className="icon-button list__button"
+                        className="task__button"
                         onClick={handleEdit}
                     >
                         <FontAwesomeIcon
-                            className="icon--button-img-mobile" icon={faPenToSquare} />
+                            className="task__button-img-mobile" icon={faPenToSquare} />
                     </button>
                 </div>
             </div>

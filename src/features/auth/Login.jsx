@@ -8,6 +8,8 @@ import { useLoginMutation } from "./authApiSlice"
 import usePersist from "../../hooks/usePersist"
 import useTitle from "../../hooks/useTitle"
 import PulseLoader from "react-spinners/PulseLoader"
+import "./authCSS/Login.css"
+import Credentials from "./Credentials"
 
 const Login = () => {
   useTitle("User Login")
@@ -22,40 +24,40 @@ const Login = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
 
-  const [login, {isLoading}] = useLoginMutation()
+  const [login, { isLoading }] = useLoginMutation()
 
   useEffect(() => {
     userRef.current.focus()
-  },[])
+  }, [])
 
   useEffect(() => {
     setErrMsg('');
-    }, [username,password])
+  }, [username, password])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    try{
-      const {accessToken} = await login({username,password}).unwrap()
-      dispatch(setCredentials({accessToken}))
+    try {
+      const { accessToken } = await login({ username, password }).unwrap()
+      dispatch(setCredentials({ accessToken }))
       setUsername('')
       setPassword('')
-      navigate('/dash', {replace: true})
+      navigate('/dash', { replace: true })
 
       // window.location.reload(); //Fix this later seems lagey
 
     } catch (err) {
-      if(!err.status){
+      if (!err.status) {
         setErrMsg('No Server Response');
-      } else if(err.status === 400){
+      } else if (err.status === 400) {
         setErrMsg('Missing Username or Password')
-      } else if(err.status === 401){
+      } else if (err.status === 401) {
         setErrMsg('Unauthorized')
       } else {
         setErrMsg(err.data?.message)
       }
 
-      if(errRef.current) {
-      errRef.current.focus();    
+      if (errRef.current) {
+        errRef.current.focus();
       }
     }
   }
@@ -67,7 +69,7 @@ const Login = () => {
 
   const errClass = errMsg ? 'errmsg' : 'offscreen'
 
-  if(isLoading) return <PulseLoader className="loader" color={'#FFF'}/>
+  if (isLoading) return <PulseLoader className="loader" color={'#FFF'} />
 
   const content = (
     <section className="login">
@@ -80,8 +82,8 @@ const Login = () => {
         <form onSubmit={handleSubmit} className="login__form">
 
           <label className="login__form__label" htmlFor="username">Username:</label>
-          <input 
-            type="text" 
+          <input
+            type="text"
             className="login__form__input"
             id="username"
             ref={userRef}
@@ -91,9 +93,9 @@ const Login = () => {
             required
           />
 
-          <label className="login__form__label"  htmlFor="password">Password:</label>
-          <input 
-            type="password" 
+          <label className="login__form__label" htmlFor="password">Password:</label>
+          <input
+            type="password"
             className="login__form__input"
             id="password"
             onChange={handlePwdInput}
@@ -104,28 +106,37 @@ const Login = () => {
           <button className="login__form__submit-button">Sign In</button>
 
           <div className="login__form__bottomRow">
-          <label htmlFor="persist" className="form__persist">
-          Trust This Device:
-          <input 
-            type="checkbox" 
-            className="login__form__checkbox" 
-            id="persist"
-            onChange={handleToggle}
-            checked={persist}
-          />
-          </label>
-          <div className="login__form__forgotPass">
-          <Link to='/forgotPwd'>Forgot Password?</Link>
-          </div>
+            <label htmlFor="persist" className="form__persist">
+              Trust This Device:
+              <input
+                type="checkbox"
+                className="login__form__checkbox"
+                id="persist"
+                onChange={handleToggle}
+                checked={persist}
+              />
+            </label>
+
+
+            <div className="login__form__forgotPass">
+              <Link to='/forgotPwd'>Forgot <br />Password?</Link>
+            </div>
           </div>
 
         </form>
-      </main>    
-      
-      <footer className="login__button-container">
-        <Link 
-        className="login__button"
-        to='/'>Back to Home</Link>
+      </main>
+      <div className="login__styleLine"></div>
+
+      <footer className="login__footer">
+        <div className="login__button-container">
+          <Link
+            className="login__button"
+            to='/'>Back to Home</Link>
+        </div>
+        <div className="login__help">
+          <Credentials />
+        </div>
+
       </footer>
     </section>
   )

@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { Link } from "react-router-dom";
 
+import './componentsCSS/Public.css'
+
 const Public = () => {
     const content = (
         <section className="public">
@@ -54,6 +56,7 @@ const Public = () => {
             </div>
             <br />
             </main>
+            <div className="public__styleline"></div>
             <footer className="public__login">
             <Link to="/login">User Login</Link>
             </footer>

@@ -1,0 +1,95 @@
+.usersList {
+  display: grid;
+  color: white;
+  row-gap: 0.1em;
+  width: 50%;
+  grid-template-columns: 1.5fr 1fr 0.5fr;
+  margin-top: 15px;
+  align-content: center;
+  margin-inline: auto;
+  row-gap: calc(3px + 0.2vh);
+}
+
+.usersList__lhead,
+.usersList__row,
+.usersListBody{
+    display: contents;
+}
+
+.usersList__lhead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.usersList__lh {
+  color: white;
+  background-color: var(--BUTTON-BORDER);
+  border-block: 3px outset white;
+  font-size: calc(10px + 1.4vw);
+  min-height: 60px;
+  height: 5vh;
+  border-inline: none;
+  align-content: center;
+  background-color: var(--BUTTON-BORDER);
+  max-height: 10%;
+}
+
+.usersList__lh:first-child {
+  border-left: 3px outset white;
+  border-radius: 15px 0 0 5px;
+  padding-inline: 2vw;
+}
+
+.usersList__lh:last-child {
+  border-right: 3px outset white;
+  border-radius: 0 15px 5px 0;
+  padding-inline: 15px;
+}
+
+@media screen and (max-width: 436px) {
+  .usersList {
+    width: 80%;
+  }
+
+  .user__roles{
+    padding-left: 5vw;
+  }
+
+    .usersList__lh{
+    min-height: 45px;
+  }
+}
+
+@media screen and (min-width: 436px) and (max-width: 780px){
+  .usersList--users {
+    margin-inline: auto;
+    max-width: 70vw;
+    align-content: center;
+  }
+
+  
+  .usersList__lh{
+    max-height: 50px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1450px){
+   
+  .usersList {
+    font-size: 1.5rem;
+  } 
+
+  
+  .usersList--users {
+    max-width: 80vw;
+    margin-inline: auto;
+    margin-top: 5vh;
+  }
+
+  .usersList__lh,
+  .usersList__cell,
+  .edit--button {
+    max-height: 85px;
+  }
+}

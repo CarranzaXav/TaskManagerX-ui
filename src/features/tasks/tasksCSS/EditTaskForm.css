@@ -1,0 +1,329 @@
+.editTaskForm {
+  background-color: #bac2d6;
+  margin-top: 20px;
+  padding-top: 5%;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 50%;
+  justify-self: center;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+
+.editTaskForm__title-row {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  margin-inline: 5%;
+  top: -25px;
+  padding-bottom: 0.5em;
+
+  h2 {
+    width: 55%;
+  }
+}
+
+.editTaskForm__field__select {
+  place-self: center;
+  display: inline-flex;
+  justify-items: center;
+  width: 100%;
+  padding-inline: 5%;
+}
+
+.editTaskForm__label {
+  padding-left: 10%;
+  align-self: flex-start;
+  width: 50%;
+}
+
+.editTaskForm__select {
+  align-self: flex-end;
+  width: 70%;
+  padding: 0.3em;
+  border-radius: 15px;
+  font-size: calc(5px + 1.2vw);
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.editTaskForm__select__task::-webkit-scrollbar {
+  display: none;
+}
+
+.editTaskForm__editBlock {
+  place-self: center;
+  display: inline-flex;
+  justify-items: center;
+  width: 100%;
+  padding-inline: 5%;
+  padding-top: 1.5vh;
+}
+
+.editTaskForm__input {
+  padding: 0.5em;
+  border-radius: 15px;
+  place-self: center;
+  width: 70%;
+  max-width: 1000px;
+}
+
+.editTaskForm__row-edit {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  gap: 2em;
+  align-self: center;
+}
+
+.editTaskForm__divider {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5em;
+}
+
+.editTaskForm__assign {
+  width: 100%;
+  display: inline-flex;
+  margin-inline: auto;
+  padding-top: 10px;
+  padding-inline: 5%;
+}
+
+.editTaskForm__assignTo {
+  margin-left: 0;
+  padding-left: 10%;
+  width: 50%;
+  display: flex;
+  font-size: 0.75em;
+  align-self: center;
+}
+
+.editTaskForm__usernameBlk {
+  width: 70%;
+}
+
+.editTaskForm__username {
+  display: flex;
+  align-self: center;
+  justify-items: center;
+  font-size: 0.8em;
+  padding: 0.2em;
+  border-radius: 5px;
+}
+
+.editTaskForm__bottomRow {
+  display: inline-flex;
+  width: 100%;
+  padding-block: 5%;
+  padding-inline: 5%;
+  align-items: center;
+}
+
+.editTaskForm__completeBlock {
+  width: 100%;
+  padding-top: 1vh;
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+.editTaskForm__completeLabel {
+  display: flex;
+  width: 60%;
+  margin-left: 0;
+  font-size: 1.25rem;
+}
+
+.editTaskForm__checkbox-container {
+  display: flex;
+  width: 50%;
+  font-size: 1.25rem;
+}
+
+.taskForm__checkbox {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.editTaskForm__status {
+  display: inline-flex;
+  width: 100%;
+}
+
+.editTaskForm__title-row-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-left: -20px;
+  row-gap: 20vw;
+}
+
+.taskIcon-saveButton {
+  width: 48px;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.taskIcon-deleteButton {
+  width: 45%;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.taskIcon-buttonSaveContainer {
+  width: 45%;
+  font-size: 2rem;
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editTaskForm__timeBlock {
+  width: 50%;
+  display: inline;
+}
+
+.editTaskForm__status {
+  display: inline-flex;
+  width: 70%;
+  margin-top: 2%;
+  margin-inline: 15%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 436px) {
+  .editTaskForm {
+    width: 90%;
+  }
+
+  .editTaskForm__title-row {
+    top: 0;
+    margin-left: 5%;
+    padding-bottom: 15px;
+
+    h2 {
+      font-size: 1.25rem;
+      width: 60%;
+    }
+  }
+
+  .taskIcon-deleteBtn {
+    font-size: 20px;
+  }
+
+  .editTaskForm__label {
+    font-size: 1rem;
+  }
+
+  .editTaskForm__select {
+    font-size: 0.8rem;
+    padding: 0.5em;
+  }
+
+  .editTaskForm__input {
+    font-size: 1rem;
+  }
+
+  .editTaskForm__checkbox-container {
+    font-size: 1rem;
+  }
+
+  .textForm__checkbox {
+    width: 20px;
+  }
+
+  .editTaskForm__assignTo {
+    font-size: 1rem;
+  }
+
+  .editTaskForm__username {
+    font-size: 0.8rem;
+  }
+
+  .editTaskForm__completeLabel {
+    font-size: 0.8rem;
+  }
+
+  .editTaskForm__editTask__username {
+    font-size: 0.75rem;
+  }
+
+  .taskIcon-saveBtn {
+    width: 20px;
+  }
+
+  .editTaskForm__timeBlock {
+    display: none;
+  }
+
+  .taskIcon-buttonSaveContainer {
+    right: 20%;
+  }
+}
+
+@media screen and (min-width: 437px) and (max-width: 780px) {
+  .editTaskForm__title-row > h2 {
+    font-size: 1.5rem;
+    margin-left: 5%;
+  }
+
+  .taskIcon-deleteBtn {
+    font-size: 20px;
+  }
+
+  .editTaskForm__label {
+    font-size: 1.3rem;
+  }
+
+  .editTaskForm__completeLabel {
+    font-size: 0.8rem;
+  }
+
+  .editTaskForm__select {
+    font-size: 1rem;
+  }
+
+  .editTaskForm__input {
+    font-size: 1.2rem;
+  }
+
+  .editTaskForm__checkbox-container {
+    font-size: 1rem;
+  }
+
+  .textForm__checkbox {
+    width: 20px;
+  }
+
+  .editTaskForm__assignTo {
+    font-size: 0.8rem;
+  }
+
+  .editTaskForm__editTask__username {
+    font-size: 0.75rem;
+  }
+
+  .taskIcon-saveBtn {
+    width: 20px;
+  }
+}

@@ -1,0 +1,58 @@
+.users__cell--inactive {
+  background-color: var(--INACTIVE);
+}
+
+.users__row {
+  display: contents;
+}
+
+.users__cell {
+  background-color: var(--DASH-HEADER);
+  border-block: 2px inset var(--DIV-COLOR);
+  color: white;
+  font-size: calc(10px + 1vw);
+  align-content: center;
+}
+
+.users__cell:last-child {
+  border-right: 3px outset black;
+  padding-left: 2vw;
+  border-radius: 0 5px 5px 0;
+  place-content: center;
+  display: flex;
+}
+
+.users__cell:first-child {
+  border-left: 3px outset black;
+  padding-left: 2vw;
+  border-radius: 5px 0 0 5px;
+}
+
+.users__button {
+  place-content: center;
+  color: var(--DIV-COLOR);
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  display: grid;
+  place-content: center;
+}
+
+.users__edit--button {
+  font-size: 1.75rem;
+  border-right: 3px outset black;
+  padding-left: 2%;
+  border-radius: 0 5px 5px 0;
+  place-content: center;
+  display: grid;
+  align-content: center;
+  background-color: var(--BUTTON-BORDER);
+  border-block: 2px inset var(--DIV-COLOR);
+}
+
+@media screen and (max-width: 436px) {
+  .users__row {
+    width: 80%;
+  }
+}

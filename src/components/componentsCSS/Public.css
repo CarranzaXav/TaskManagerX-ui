@@ -1,0 +1,213 @@
+.public {
+    margin: auto;
+    height: 50vh;
+    max-height: 390px;
+    width: 40vw;
+    min-width: 350px;
+    max-width: 700px;
+    padding: 1em;
+    align-items: center;
+    --input-focus: #2d8cf0;
+    --font-color: #323232;
+    --font-color-sub: #666;
+    --bg-color: beige;
+    --main-color: black;
+    padding: 20px;
+    background: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+
+}
+
+.public__title {
+    margin-left: 2vw;
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 45px;
+}
+
+.public__main {
+    color: var(--font-color-sub);
+    font-weight: 600;
+    font-size: 17px;
+    width: 80%;
+    height: 50%;
+    max-height: 225px;
+}
+
+.public__main {
+    border-top: 2px solid var(--BORDER-COLOR);
+    padding: 1em 0;
+}
+
+.public__addr {
+    margin-left: auto;
+    width: 100%;
+    height: 80%;
+    display: grid;
+    gap: 0px;
+    margin-top: 1em;
+    margin-bottom: 100px;
+    align-content: center;
+    justify-content: center;
+}
+
+.public__addr-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.public__addr-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    position: relative;
+    margin: 20px;
+    padding-inline: 1em;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    svg {
+        font-size: 3em;
+    }
+}
+
+.public__icon-title {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.public__addr-button:hover .public__icon-title,
+.public__addr-button:focus-visible .public__icon-title {
+
+    display: block;
+}
+
+.public__login {
+    margin: 0px auto 0 auto;
+    margin-bottom: 20px;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.public__login:hover,
+.public__login:focus-visible {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+    background-color: var(--DIV-COLOR);
+    width: 130px;
+}
+
+.public__styleline {
+    border-bottom: 2px solid var(--BORDER-COLOR);
+    width: 80%;
+}
+
+@media screen and (max-width:436px) {
+    .public__title>h1 {
+        font-size: 16px !important;
+    }
+
+    .public__addr {
+        min-width: 240px;
+        padding-bottom: 20px;
+    }
+
+    .public__addr-buttons {
+        font-size: 10px;
+    }
+
+    .public__addr-button {
+        padding-inline: 10px;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .public__main {
+        width: 260px;
+        font-size: 12px;
+    }
+
+    .public__login {
+        width: 110px;
+        height: 35px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width:437px) and (max-width:780px) {
+    .public {
+        height: 380px;
+    }
+
+    .public__main {
+        font-size: 12px;
+    }
+
+    .public__title {
+        font-size: 16px !important;
+    }
+
+    .public__addr {
+        margin: auto;
+        min-width: 265px;
+    }
+
+
+    .public__addr-button {
+        width: 45px;
+        padding-inline: 0 !important;
+    }
+
+    .public__login {
+        width: 110px;
+        height: 35px;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media screen and (min-width:1025px) and (max-width: 1450px) {
+    .public {
+        width: 45%;
+        min-width: 475px;
+        padding-bottom: 20px;
+    }
+
+}

@@ -1,0 +1,234 @@
+.newTaskForm {
+    padding-top: 20px;
+    display: flex;
+    margin:  5% auto auto auto;
+    background-color: #BAC2D6;
+    border-radius: 10px;
+    flex-flow: column nowrap;
+    gap: 1vh;
+    align-items: center;
+    width: 55vw;
+    height: 50vh;
+}
+
+.newTaskForm__title-row {
+    display: flex;
+    color: white;
+    padding: 0.5em 2em 0.5em 0.5em;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5px;
+    justify-content: flex-end;
+}
+
+.newTaskForm__title {
+    display: flex;
+    position: absolute;
+    font-size: calc(25px + 1.5vw);
+    height: 10%;
+    background:
+       -webkit-linear-gradient(280deg, rgba(255, 255, 255, 1) 20%, rgba(247, 246, 246, 0) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newTask__lineContainer{
+    height:10%;
+    width: 100%;
+}
+
+.newTask__line {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(150deg, rgba(255, 255, 255, 1) 70%, rgba(247, 246, 246, 0) 95%);
+    height: 2.5px;
+    width: 50%;
+    margin-top: 5%;
+    position: absolute;
+    justify-self: anchor-center;
+}
+
+
+.newTaskForm__block{
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:80%;
+    width: 60%;
+}
+
+.newTaskForm__area__select__row {
+    width: 100%;
+    height: 25%;
+    margin-inline: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newTaskForm__area__select__row__empty{
+    height:10%;
+    width: 60%;
+}
+.newTaskForm__label__area {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;  
+    font-size: 1.1rem;
+    height: 5vh;
+    max-height: 70px;
+    width: 60%;
+
+}
+
+.newTaskForm__select {
+    justify-content: flex-end;
+    width: 50%;
+    padding: 0.3em 1em;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    justify-items: flex-end;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width: none;
+    /* Firefox */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.newTaskForm__text__block {
+    display: contents;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.newTaskForm__label {
+    margin-left: 0;
+    padding-bottom: 0.5em;
+    width: 100%;
+    margin-inline: auto;
+    font-size: 1.8rem;
+}
+
+.newTaskForm__input {
+    padding: 0.5em;
+    border-radius: 15px;
+    width: 100%;
+    height: 35%;
+}
+
+.newTaskForm__assign__block {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    width: 100%;
+    height: 20%;
+    column-gap: 10%;
+
+}
+
+.newTaskForm__label__assign {
+    font-size: 1.25rem;
+    justify-content: flex-start; 
+    width: 60%; 
+}
+
+.newTaskForm__select__assign{
+    width: 40%;
+    border-radius: 15px;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: flex-end;
+    justify-items: flex-end;
+    justify-self: flex-end;
+}
+
+
+.newTaskForm__checkbox-container {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    gap: 0.5em;
+}
+
+.newTaskForm__select__task::-webkit-scrollbar {
+    display: none;
+}
+
+.newTaskFormBtnContainer{
+    display: flex;
+    width: 100%;
+    padding: 1em;
+    justify-content: flex-end;
+}
+
+.icon-button-newTaskForm {
+    width: 48px;
+    height: 48px;
+    font-size: 3vw;
+    z-index: 0;
+    position: relative;
+    display: flex;
+    background-color: transparent;
+    border: none;
+    color: var(--LINK-COLOR);
+}
+
+@media screen and (max-width: 436px) {
+.newTaskForm {
+    width: 65vw;
+}
+
+.newTaskForm__block{
+    padding-top: 0;
+}
+
+.newTask__line{
+    margin-top: min(10%, 35px);
+}
+
+ .newTaskForm__title {
+        font-size: 1.2rem;
+    }    
+    
+    .newTaskForm__label__area {
+        font-size: 0.8rem;
+    }
+
+    .newTaskForm__select {
+        font-size: 0.8rem;
+    }
+
+    .newTaskForm__label{
+        font-size: 1rem;
+    }
+
+    .icon-button-newTaskForm{
+        font-size: 1.8rem;
+        width: 30px;
+        height: 30px;
+    }
+
+    
+}
+
+@media screen and (min-width:437px) and (max-width:780px) {
+    .newTaskForm__title {
+        font-size: 1.8rem;
+    }    
+    
+    .newTaskForm__label__area {
+        font-size: 0.8rem;
+    }
+
+    .newTaskForm__select {
+        font-size: 0.8rem;
+    }
+
+    .newTaskForm__label{
+        font-size: 1rem;
+    }
+}

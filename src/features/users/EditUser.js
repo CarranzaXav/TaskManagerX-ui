@@ -1,25 +1,25 @@
-import { useParams } from "react-router-dom"
-import { useGetUsersQuery } from "./usersApiSlice"
-import EditUserForm from './EditUserForm'
-import PulseLoader from 'react-spinners/PulseLoader'
-import useTitle from '../../hooks/useTitle'
+import { useParams } from "react-router-dom";
+import { useGetUsersQuery } from "./usersApiSlice";
+import EditUserForm from "./EditUserForm";
+import PulseLoader from "react-spinners/PulseLoader";
+import useTitle from "../../hooks/useTitle";
 
 const EditUser = () => {
-  useTitle('Task Manager X: Edit User')
+  useTitle("Task Manager X: Edit User");
 
-  const { id } = useParams()
+  const { id } = useParams();
 
-  const { user } = useGetUsersQuery('usersList', {
+  const { user } = useGetUsersQuery("usersList", {
     selectFromResult: ({ data }) => ({
-      user: data?.entities[id]
+      user: data?.entities[id],
     }),
-  })
+  });
 
-  if (!user) return <PulseLoader color={'#FFF'} />
+  if (!user) return <PulseLoader className="loader" color={"#FFF"} />;
 
-  const content = <EditUserForm user={user} />
+  const content = <EditUserForm user={user} />;
 
-  return content
-}
+  return content;
+};
 
-export default EditUser
+export default EditUser;

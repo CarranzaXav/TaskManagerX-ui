@@ -6,6 +6,9 @@ import taskList from '../../icons/taskList.svg'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faUser, faUserPlus} from "@fortawesome/free-solid-svg-icons"
 
+import "./authCSS/Welcome.css"
+
+
 const Welcome = () => {
     const { username, isManager, isAdmin} = useAuth()
 
@@ -17,13 +20,14 @@ const Welcome = () => {
 
     const content = (
         <section className='welcome'>
+        <div className="welcome__head">
+            <h1>Welcome {username}</h1>
 
-        <h1>Welcome {username}</h1>
-
-        <div className="welcome__date">
-            <p className='welcome__date--date'>{today}</p>
-            
-            <p className="welcome__date--time">{time}</p>
+            <div className="welcome__date">
+                <p className='welcome__date--date'>{today}</p>
+                
+                <p className="welcome__date--time">{time}</p>
+            </div>
         </div>
         <div className='welcome__links'>
             <div className='welcome__link'>
@@ -56,7 +60,7 @@ const Welcome = () => {
                         icon={faUser}
                         className='welcome__userListIcon'/> 
                         <div className="welcome__links--title">
-                            View User Setting
+                        View User Setting
                         </div>
                     </Link>
                 </div>
@@ -65,7 +69,7 @@ const Welcome = () => {
                     <Link to='/dash/users/new'>
                         <FontAwesomeIcon icon={faUserPlus} className='welcome__newUserIcon'/>
                     <div className="welcome__links--title">
-                            Add New User
+                    Add New User
                     </div>
 
 

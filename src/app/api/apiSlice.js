@@ -2,7 +2,12 @@ import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'https://taskmanagerx-api.onrender.com',
+    // CHANGE URLS IN BACKEND ALLOWEDORIGINS.JS FILE
+    // FOR PRODUCTION
+    // baseUrl: 'https://taskmanagerx-api.onrender.com',
+
+    // FOR DEVELOPEMENT
+    baseUrl: 'http://localhost:3500',
     credentials:'include',
     prepareHeaders: (headers, { getState }) => {
         const token = getState().auth.token

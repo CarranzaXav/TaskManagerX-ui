@@ -1,0 +1,177 @@
+.errmsg {
+  display: inline-block;
+  background-color: var(--DIV-BGCOLOR);
+  color: var(--ERROR);
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.userForm__input--incomplete {
+  border: 1px solid var(--INPUT-INVALID);
+  outline: 1px solid var(--INPUT-INVALID);
+}
+
+.userForm {
+  font-size: 1.2rem;
+  display: flex;
+  margin-inline: auto;
+  flex-flow: column;
+  gap: 1vh;
+  width: 50%;
+  max-width: 875px;
+}
+
+.userForm__title-row {
+  display: grid;
+  align-items: center;
+  color: white;
+  width: 100%;
+}
+
+.userForm__title {
+  display: flex;
+  position: relative;
+  font-size: calc(25px + 1.5vw);
+  width: 35%;
+  left: 70%;
+  background: -webkit-linear-gradient(
+    280deg,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(247, 246, 246, 0) 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.new__task__line {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    150deg,
+    rgba(255, 255, 255, 1) 60%,
+    rgba(247, 246, 246, 0) 95%
+  );
+  height: 2.5px;
+  width: 100%;
+  z-index: 0;
+  top: 10px;
+  margin-bottom: 5vh;
+  position: relative;
+}
+
+.userForm__label {
+  margin-left: 0;
+  padding-block: 0.8em;
+  width: 100%;
+  margin-inline: auto;
+  font-size: 1.25rem;
+}
+
+.userForm__assign {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userForm__input {
+  padding: 0.5em;
+  border-radius: 15px;
+  width: 75%;
+}
+
+.userForm__submit-button {
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+.userForm__select__user {
+  min-width: 120px;
+  width: 30%;
+  height: 10%;
+  padding: 0.3em;
+  border-radius: 15px;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.userForm__select__user::-webkit-scrollbar {
+  display: none;
+}
+
+.userForm__action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  position: absolute;
+  width: 45%;
+}
+
+.userForm__icon-button {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: contents;
+  left: 10%;
+  font-size: 2rem;
+}
+
+.userForm__icon-button:hover,
+.userForm__icon-button:focus-visible {
+  svg {
+    color: white;
+  }
+}
+
+.userForm__icon-button[disabled] {
+  visibility: hidden;
+}
+
+.users__icon-button {
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 436px) {
+  .userForm {
+    width: 90%;
+    font-size: 0.8rem;
+  }
+
+  .userForm__title {
+    width: 50%;
+    left: 50%;
+  }
+
+  .userForm__label {
+    font-size: 0.8rem;
+  }
+
+  .userForm__assign {
+    width: 100%;
+  }
+
+  .userForm__action-buttons {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (min-width: 436px) and (max-width: 780px) {
+  .userForm {
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .userForm__label {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1450px) {
+  .userForm__action-buttons {
+    position: static;
+  }
+}

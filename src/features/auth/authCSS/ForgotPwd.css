@@ -1,0 +1,109 @@
+.forgotPwd {
+  margin: auto;
+  height: 40vh;
+  min-height: 430px;
+  max-height: 600px;
+  width: 38vw;
+  min-width: 305px;
+  max-width: 740px;
+  padding: 1em;
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: beige;
+  --main-color: black;
+  padding: 20px;
+  padding-top: 30px;
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+}
+
+.forgotPwd__form__label {
+  font-size: 2em;
+  letter-spacing: 8px;
+  height: 70px;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: auto;
+  margin-top: 25px;
+}
+
+.forgotPwd__form__input {
+  align-self: center;
+  min-width: 200px;
+  width: 20vw;
+  max-width: 445px;
+  padding: 0.5em;
+  border-radius: 15px;
+  margin-bottom: auto;
+}
+
+.forgotPwd__form__button {
+  margin: 0px auto 0 auto;
+  width: 160px;
+  border-radius: 5px;
+  border: 2px solid var(--main-color);
+  background-color: var(--bg-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-weight: 600;
+  color: var(--font-color);
+  cursor: pointer;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.forgotPwd__form__buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.forgotPwd__form__buttonContainer:hover,
+.forgotPwd__form__buttonContainer:focus-visible {
+  box-shadow: 0px 0px var(--main-color);
+  transform: translate(3px, 3px);
+  background-color: var(--DIV-COLOR);
+  width: 160px;
+}
+
+.forgotPwd__form__button-Home {
+  width: 40px;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width) {
+     .forgotPwd__form__label {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width:437px) and (max-width:780px) {
+  
+  .forgotPwd__form__label {
+    font-size: 1.75rem;
+    letter-spacing: 4px;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width: 1450px) {
+    .forgotPwd__form__label {
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+  }
+}

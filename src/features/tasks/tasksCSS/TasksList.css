@@ -1,0 +1,245 @@
+.taskList__container {
+  max-width: 200px;
+  width: 70%;
+  margin-inline: auto;
+  border-radius: 0 0 50px 50px;
+}
+
+.taskList__filter {
+  width: 70%;
+  margin-inline: auto;
+  margin-bottom: 15px;
+  place-content: center;
+  position: relative;
+  display: flex;
+}
+
+.taskList__filter--dropdown {
+  margin-left: 40%;
+  border-radius: 10px;
+  padding-left: 1vw;
+}
+
+.taskList {
+  display: grid;
+  color: white;
+  row-gap: 0.1em;
+}
+
+.taskList--tasks {
+  grid-template-columns: 1fr 1fr 1.25fr 1.25fr 2fr 1.25fr 0.75fr;
+  row-gap: 0.5em;
+}
+
+.taskBody,
+.taskHead,
+.taskList__row {
+  display: contents;
+}
+
+.taskList__lhead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.taskList__lh {
+  text-align: left;
+}
+
+.taskList__lh {
+  background-color: var(--BUTTON-BORDER);
+  color: white;
+  border-block: 2px outset white;
+  font-size: 1.6vw;
+  padding-block: 2vh;
+  place-content: center;
+  display: flex;
+}
+
+.taskList__lh:first-child {
+  border-left: 2px outset white;
+  border-radius: 25px 0 0 10px;
+}
+
+.taskList__lh:last-child {
+  border-right: 2px outset white;
+  border-radius: 0 25px 10px 0;
+}
+
+.taskList__cell:last-child {
+  display: grid;
+  place-content: center;
+  background-color: var(--BUTTON-BORDER);
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.task__status {
+  align-content: center;
+  padding-left: 1vw;
+}
+
+.task__areas__info {
+  padding-left: 3vw;
+}
+
+.task__taskname {
+  width: 100%;
+}
+
+.loadMore__container {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.loadMore__button {
+  padding: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.loadMore__icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 436px) {
+  .taskList__container {
+    width: 80%;
+  }
+
+  .taskList__lh,
+  .taskList__cell {
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .taskList__filter {
+    place-content: normal;
+    font-size: 0.8rem;
+  }
+
+  .taskList__filter--dropdown {
+    width: 100%;
+    font-size: 0.6rem;
+    margin-left: 10%;
+    padding-left: 2px;
+    letter-spacing: 3px;
+    border-radius: 45px;
+  }
+
+  .task__updated,
+  .task__created,
+  .task__username,
+  .task__status,
+  .task__status--info,
+  .task__updated,
+  .task__areas__info,
+  .task__areas {
+    display: none;
+  }
+
+  .task__taskname--open {
+    color: var(--TASK-OPEN) !important;
+  }
+
+  .task__taskname--completed {
+    color: var(--TASK-COMPLETED) !important;
+  }
+
+  .taskList--tasks {
+    grid-template-columns: 2fr 1fr;
+    row-gap: 0.15em;
+  }
+
+  .task__taskname--header--mobile {
+    border-right: none;
+    border-radius: 25px 0 0 5px;
+    width: 100%;
+  }
+
+  .task__taskname--mobile {
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .task__edit--mobile {
+    border-left: none;
+    border-radius: 0 25px 5px 0 !important;
+  }
+
+  .loadMore__icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media screen and (min-width: 437px) and (max-width: 780px) {
+  .taskList__container {
+    width: 75%;
+  }
+
+  .taskList--tasks {
+    grid-template-columns: 1fr 1.5fr 2fr 1fr;
+    row-gap: 0.2em;
+  }
+
+  .taskList__lh {
+    font-size: 1.2rem;
+  }
+
+  .task__created,
+  .task__username,
+  .task__updated {
+    display: none;
+  }
+
+  .task__areas--tablet,
+  .task__areas__info {
+    min-width: 130px;
+  }
+
+  .task__areas,
+  .task__taskname {
+    border-inline: none !important;
+  }
+
+  .task__areas__info {
+    font-size: 1rem;
+    letter-spacing: 3px;
+  }
+
+  .task__status {
+    background-color: var(--BUTTON-BORDER);
+    border-right: none !important;
+    padding-left: 0;
+    padding-right: 2vw;
+  }
+
+  .form__label__task {
+    font-size: 3.2vw;
+  }
+
+  .loadMore__icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1450px) {
+  .taskList--tasks {
+    row-gap: 0.25em;
+  }
+
+  .task__created,
+  .task__updated,
+  .task__username {
+    display: block;
+  }
+}

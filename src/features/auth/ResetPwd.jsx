@@ -8,6 +8,8 @@ import {
   faHome
  } from "@fortawesome/free-solid-svg-icons"
 
+ import "./authCSS/ResetPwd.css"
+
 const ResetPwd = () => {
     const formik = useFormik({
         initialValues: {

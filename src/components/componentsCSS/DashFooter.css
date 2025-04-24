@@ -1,0 +1,31 @@
+.dash-footer {
+  width: 100%;
+  height: 40px;
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: var(--BGCOLOR);
+  padding-block: 0.5em;
+  border-top: 1px solid var(--BORDER-COLOR);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1em;
+}
+
+.dash-footer__button {
+  font-size: 1.25rem;
+  padding: 3px;
+  width: auto;
+  height: auto;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: flex;
+  left: 10%;
+  place-content: center;
+  padding-block: 1px;
+}

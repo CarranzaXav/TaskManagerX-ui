@@ -1,0 +1,266 @@
+.errmsg {
+  display: inline-block;
+  background-color: var(--DIV-BGCOLOR);
+  color: var(--ERROR);
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.form__input--incomplete {
+  border: 1px solid var(--INPUT-INVALID);
+  outline: 1px solid var(--INPUT-INVALID);
+}
+
+.form__editUser {
+  margin-top: 20px;
+  padding: 1em 2em;
+  display: flex;
+  margin-inline: auto;
+  flex-flow: column nowrap;
+  font-size: 1.25rem;
+  gap: 0.5rem;
+  align-items: center;
+  width: 50%;
+  background: #bac2d6;
+  border-radius: 15px;
+}
+
+.editUserForm__Header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.editUserFormTitle{
+    color:white;
+    display: flex;
+    justify-content:flex-start;
+    width: 80%;
+    font-size: 2em;
+}
+
+.editUserForm__DeleteButton{
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: flex;
+  justify-content: flex-end;
+  left: 10%;
+  font-size: 2rem;
+  width: 45%;
+}
+
+.editUserForm__DeleteBtn{
+    svg{
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.editUserForm__DeleteBtn:hover,
+.editUserForm__DeleteBtn:focus-visible{
+    color: white;
+}
+
+.form__label {
+  margin-left: 0;
+  width: 100%;
+  margin-inline: auto;
+  font-size: 1.25rem;
+}
+
+.form__input {
+  padding: 0.5em;
+  border-radius: 15px;
+  width: 75%;
+}
+
+.editUserForm__email {
+  width: 100%;
+  display: contents;
+}
+
+.editUserForm__emailLabel{
+  margin-left: 0;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.editUserForm__emailInput{
+    width: 75%;
+    padding: 0.5em;
+    border-radius: 15px;
+}
+
+.editUserForm__activeUserStatus {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5em;
+  margin-left: 0;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.editUserForm__checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.form__select {
+  width: fit-content;
+  padding: 0.3em;
+  border-radius: 15px;
+}
+
+.editUserAssignedRole {
+  display: flex;
+  width: 100%;
+}
+
+.EditUserForm__assignLabel{
+  margin-left: 0;
+  width: 40%;
+  font-size: 1.25rem;
+}
+
+.editUserForm__assignFormSelect {
+  width: 20%;
+  min-width: 110px;
+  padding: 0.3em;
+  border-radius: 15px;
+  justify-items: center;
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.editUserForm__assignFormSelect::-webkit-scrollbar {
+  display: none;
+}
+
+.editUserform__bottomRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form__action-editUserButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5em;
+  position: static;
+}
+
+.editUserForm__icon-button {
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  border: none;
+  color: var(--LINK-COLOR);
+  display: contents;
+  left: 10%;
+  font-size: 2rem;
+}
+
+.editUserForm__icon-button:hover,
+.editUserForm__icon-button:focus-visible {
+  svg {
+    color: white;
+  }
+}
+
+.editUserForm__icon-button[disabled] {
+  visibility: hidden;
+}
+
+.form__submit-button {
+  padding: 0.5em;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:436px) {
+    .form__editUser{
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    .editUserAssignedRole{
+      justify-content: space-between;
+    }
+
+    .form__label,
+    .editUserForm__emailLabel,
+    .EditUserForm__assignLabel,
+    .editUserForm__activeUserStatus
+    {
+        font-size: 0.75rem;
+    }
+
+    .EditUserForm__assignLabel{
+        width: 30%;
+        padding-right: 5px;
+    }
+
+    .editUserForm__assignFormSelect{
+        min-width: 60px;
+        font-size: 0.7rem;
+    }
+
+    .editUserForm__DeleteButton{
+    font-size: 1.25rem;
+}
+
+    .editUserForm__icon-button{
+        font-size:1.25rem;
+    }
+
+    .editUserForm__checkbox{
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media screen and (min-width:436px) and (max-width:780px){
+    .form__editUser{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+
+    .editUserAssignedRole{
+      width: 100%;
+    }
+
+    .form__label,
+    .editUserForm__emailLabel,
+    .EditUserForm__assignLabel,
+    .editUserForm__activeUserStatus
+    {
+        font-size: 1rem;
+    }
+
+    .EditUserForm__assignLabel{
+        width: 40%;
+        padding-right: 5px;
+    }
+
+    .editUserForm__assignFormSelect{
+        min-width: 80px;
+    }
+
+     .editUserForm__DeleteButton{
+    font-size: 1.5rem;
+    }
+
+    .editUserForm__icon-button{
+        font-size:1.5rem;
+    }
+
+    .editUserForm__checkbox{
+        width: 200px;
+        height: 20px;
+    }
+}
